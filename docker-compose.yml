@@ -1,9 +1,9 @@
 version: "3.9"
 
 services:
-  glutz-eAccessServer:
+  glutz-eaccessserver:
     build: .
-    restart: never
+    restart: unless-stopped
     ports:
       - "8332:8332"
     volumes:
