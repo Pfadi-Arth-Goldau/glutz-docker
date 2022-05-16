@@ -2,7 +2,7 @@
 
 Allows to run the [glutz](https://glutz.com) eAccessServer software in a Docker dontainer
 
-Automaticaly downloads a fixed version while building the `Dockerfile`. To obtain the direct download url got to https://glutz.com/ch/de/service/download/soft-firm-ware and choose Linux, accept the GPL. You get redirected to the real download site (e.g. for 1.13.4 it is https://cip.myassets.ch/CIP/asset/download/glutz-website/99636)
+Automaticaly downloads a fixed version while building the `Dockerfile`. To obtain the direct download url got to https://glutz.com/ch/de/service/download/soft-firm-ware and choose Linux, accept the GPL. You get redirected to the real download site (e.g. for 1.13.4 it is https://cip.myassets.ch/CIP/asset/download/glutz-website/99636). Adjust the `Dockerfile` with the new url.
 
 
 # Instructions
