@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  glutz-eAccessServer:
+    build: .
+    restart: never
+    ports:
+      - "8332:8332"
+    volumes:
+      - ./db:/db
+    env_file:
+      - .env
