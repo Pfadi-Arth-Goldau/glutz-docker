@@ -7,4 +7,4 @@ RUN echo 'ACTION=="add", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="03eb", ATTRS{idP
 
 
 ENV DBPATH=/db/db.gax
-CMD ["/glutz/Desktop/eAccessServer", "--auto-convert", "--auto-reclaim", "$DBPATH"]
+CMD ["bash", "-c", "/glutz/Desktop/eAccessServer --auto-convert --auto-reclaim $DBPATH"]
