@@ -21,3 +21,9 @@ docker run example: `docker run -v /folder/containing/gax:/db -e DBPATH=/db -p 8
 _**Recommendation:**_
 
 Secure your glutz instance with a reverse proxy like [traefik](https://traefik.io/) or [nginx](https://www.nginx.com/). Traefik allows easy configuration together with automatic let's encrypt certificates.
+
+
+## Settings in eAccessDesktop
+
+For me it was necessary to change the "Host-Address" setting in eAccessDesktop to `http://0.0.0.0:80`.  Probably any other port woud work too, but change to `0.0.0.0` is important. I think otherwise eAccessServer does not listen to all network interfaces and within docker there are multiple network interfaces. 
+![](/doc/eAccessDesktop_Host-Address_Setting.PNG)
